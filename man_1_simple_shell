@@ -1102,7 +1102,7 @@ EXEMPLES:
 
  1. Execute a shell command from a string:
 
-               sh -c "cat myfile"
+               sh -c "cat Holberton"
 
         2. Execute a shell script from a file in the current directory:
 
