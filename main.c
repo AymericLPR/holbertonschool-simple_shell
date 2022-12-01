@@ -9,8 +9,9 @@ int main(void)
 {
   char *line;
   pid_t pid;
-  size_t len = 0;  
-  size_t words;
+  size_t len = 0;
+
+  line = (char *)malloc(len * sizeof(char));
   if (line == NULL)
     {
       perror("Code nonexistent");
@@ -32,14 +33,12 @@ int main(void)
 	  if (line[0] == 'e' && line[1] == 'x' && line[2] == 'i' && line[3] == 't')
 	    {
 	      free(line);
-	      line = NULL;
 	      printf("exit\n");
 	      exit(0);
 	    }
 	  else if (feof(stdin))
 	    {
 	      free(line);
-	      line = NULL;
 	      printf("exit\n");
 	      exit(0);
 	    }
@@ -54,6 +53,5 @@ int main(void)
       wait(NULL);
     }
   free(line);
-  line = NULL;
   return (0);
 }
