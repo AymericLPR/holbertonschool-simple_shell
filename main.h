@@ -1,12 +1,5 @@
-#ifndef _MAIN_H
-#define _MAIN_H
-
-/*
- * File: main.h
- * Authors: Myriam BELKHIRI
- *			Aymeric LE PEN-RAVOUX
- *			Natnael DEBOCH
- */
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <fcntl.h>
 #include <signal.h>
@@ -18,7 +11,4 @@
 #include <errno.h>
 #include <stdio.h>
 
-#define END_OF_FILE -
-#define EXIT -
-
-/*
+#endif
