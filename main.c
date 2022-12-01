@@ -7,18 +7,20 @@
 
 int main(void)
 {
-  char *words;
-  pid_t pid = fork();
+  char *line;
+  pid_t pid;
   size_t len = 0;  
-
-  if (words == NULL)
+  size_t words;
+  if (line == NULL)
     {
       perror("Code nonexistent");
       return (-1);
     }
+
+  pid = fork();
+  
   if (pid == -1)
     {
-      perror("Unsuccessful");
       return (1);
     }
   if (pid == 0)
@@ -26,23 +28,24 @@ int main(void)
       while (1)
 	{
 	  printf("$ ");
-	  getline(&words, &len, stdin);
-	  if (!(words[0] == 'e' && words[1] == 'x' && words[2] == 'i' && words[3] == 't'))
+	  getline(&line, &len, stdin);
+	  if (line[0] == 'e' && line[1] == 'x' && line[2] == 'i' && line[3] == 't')
 	    {
+	      free(line);
+	      line = NULL;
 	      printf("exit\n");
 	      exit(0);
 	    }
 	  else if (feof(stdin))
 	    {
-	     printf("exit\n");
-	     exit(0);
+	      free(line);
+	      line = NULL;
+	      printf("exit\n");
+	      exit(0);
 	    }
 	  else
 	    {
-	      free(words);
-	      words = NULL;
-	      printf("exit\n");
-	      exit(0);
+	      printf("%s\n",line);
 	    }
 	}
     }
@@ -50,7 +53,7 @@ int main(void)
     {
       wait(NULL);
     }
-  free(words);
-  words = NULL;
+  free(line);
+  line = NULL;
   return (0);
 }
