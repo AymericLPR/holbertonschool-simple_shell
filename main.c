@@ -7,12 +7,11 @@
 
 int main(void)
 {
-  char *line;
+  char *words;
   pid_t pid = fork();
-  size_t len = 0;
-  size_t words;  
+  size_t len = 0;  
 
-  if (line == NULL)
+  if (words == NULL)
     {
       perror("Code nonexistent");
       return (-1);
@@ -24,33 +23,34 @@ int main(void)
     }
   if (pid == 0)
     {
-      while (!(words == feof))
+      while (1)
 	{
 	  printf("$ ");
-	  words = getline(&line, &len, stdin);
-	  if (/* pas "exit" */)
+	  getline(&words, &len, stdin);
+	  if (!(words[0] == 'e' && words[1] == 'x' && words[2] == 'i' && words[3] == 't'))
 	    {
-	      printf("%s\n", line);
+	      printf("exit\n");
+	      exit(0);
+	    }
+	  else if (feof(stdin))
+	    {
+	     printf("exit\n");
+	     exit(0);
 	    }
 	  else
 	    {
-	      free(line);
-	      line = NULL;
+	      free(words);
+	      words = NULL;
+	      printf("exit\n");
 	      exit(0);
 	    }
-	}
-      if (words == feof)
-	{
-	  free(line);
-	  line = NULL;
-	  exit(0);
 	}
     }
   else
     {
       wait(NULL);
     }
-  free(line);
-  line = NULL;
+  free(words);
+  words = NULL;
   return (0);
 }
