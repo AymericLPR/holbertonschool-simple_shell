@@ -2,6 +2,9 @@
 
 /**
  * main - access to simple shell
+ * @argc: argc
+ * @argv: argv
+ * @envp: environement variable
  * Return: Always 0.
  */
 
