@@ -4,10 +4,9 @@
  * frk - function fork
  * @cmd: command
  * @envp: environement variable
- * @filename: shell
  */
 
-void frk(char **cmd, char **envp, char *filename)
+void frk(char **cmd, char **envp)
 {
 pid_t pid;
 
