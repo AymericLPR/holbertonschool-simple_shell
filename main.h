@@ -13,7 +13,7 @@
 #include <string.h>
 
 char **get_cmd(char *line);
-void execute_cmd(char **cmd, char **envp);
-void frk(char **cmd, char **envp, char *filename);
+// void execute_cmd(char **cmd, char **envp);
+void frk(char **cmd, char **envp);
 
 #endif
