@@ -9,16 +9,16 @@
 
 void frk(char **cmd, char **envp, char *filename)
 {
-  pid_t pid;
-  
-  pid = fork();
+pid_t pid;
 
-      if (pid == 0)
-	{
-	  if (execve(cmd[0], cmd, envp) == -1)
-	    perror("Code nonexistent");
-	  exit(0);
-	}
-      else
-        wait(NULL);
+pid = fork();
+
+if (pid == 0)
+{
+if (execve(cmd[0], cmd, envp) == -1)
+perror("Code nonexistent");
+exit(0);
+}
+else
+wait(NULL);
 }
