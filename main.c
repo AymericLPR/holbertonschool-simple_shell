@@ -19,7 +19,7 @@ int main(int argc, char **argv, char **envp)
       getline(&line, &len, stdin);
       
       if (line == NULL)
-	perror("Unsuccess");
+	      perror("Unsuccess");
       if (feof(stdin) || strcmp(line, "exit\n") == 0)
 	{
 	  printf("Exit successful\n");
