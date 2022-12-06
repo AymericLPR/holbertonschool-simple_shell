@@ -17,13 +17,11 @@ char **cmd;
 line = (char *)malloc(len * sizeof(char));
 while (1)
 {
-printf("$ ");
 getline(&line, &len, stdin);
 if (line == NULL)
 perror("Unsuccess");
 if (feof(stdin) || strcmp(line, "exit\n") == 0)
 {
-printf("Exit successful\n");
 exit(0);
 }
 else
