@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <string.h>
 
+void penv(char **envp);
 char **get_cmd(char *line);
 void frk(char **cmd, char **envp);
 
