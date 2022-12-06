@@ -8,10 +8,9 @@
  * Return: Always 0.
  */
 
-int main(int argc, char **argv, char **envp)
+int main(__attribute__((unused))int argc, char **argv, char **envp)
 {
 char *line;
-pid_t pid;
 size_t len = 0;
 char **cmd;
 
