@@ -11,4 +11,20 @@
 #include <errno.h>
 #include <stdio.h>
 
+
+typedef struct list_s
+{
+char *str;
+struct list_s *next;
+}list_t;
+
+
+
+int _strlen(char *);
+int _strcmp(char *s1, char *s2);
+int *str_concat(char *s1, char *s2);
+int *_strdup(char *str);
+
+
+
 #endif
