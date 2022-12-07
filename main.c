@@ -10,27 +10,28 @@
 
 int main(__attribute__((unused))int argc, char **argv, char **envp)
 {
-char *line;
-size_t len = 0;
-char **cmd;
-(void)argv;
+  char *line = NULL;
+  size_t len = 0;
+  char **cmd;
+  (void)argv;
 
-line = (char *)malloc(len * sizeof(char));
-while (1)
-{
-getline(&line, &len, stdin);
-if (feof(stdin) || strcmp(line, "exit\n") == 0)
-{
-exit(0);
-}
-else if (strcmp(line, "env\n") == 0)
-penv(envp);
-else
-{
-cmd = get_cmd(line);
-frk(cmd, envp);
-}
-}
-free(line);
-return (0);
+    cmd = calloc(sizeof(char), 1024);
+    while(1)
+    {
+      getline(&line, &len, stdin);
+      if (feof(stdin) || strcmp(line, "exit\n") == 0)
+	{
+	  break;
+	}
+      else if (strcmp(line, "env\n") == 0)
+	penv(envp);
+      else
+	{
+	  cmd = get_cmd(cmd, line);
+	  frk(cmd, envp);
+	}
+    }
+  free(cmd);
+  free(line);
+  return (0);
 }
