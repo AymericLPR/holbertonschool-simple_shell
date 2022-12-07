@@ -16,7 +16,7 @@ char **cmd;
 (void)argv;
 
 cmd = calloc(sizeof(char), 1024);
-while(1)
+while (1)
 {
 getline(&line, &len, stdin);
 if (feof(stdin) || strcmp(line, "exit\n") == 0)
