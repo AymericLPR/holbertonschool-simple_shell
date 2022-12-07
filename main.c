@@ -25,7 +25,7 @@ int main(__attribute__((unused))int argc, char **argv, char **envp)
 	}
       else if (strcmp(line, "env\n") == 0)
 	penv(envp);
-      else
+      else if (strcmp(line, "\n") != 0)
 	{
 	  cmd = get_cmd(cmd, line);
 	  frk(cmd, envp);
