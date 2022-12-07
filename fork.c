@@ -15,7 +15,6 @@ pid = fork();
 if (pid == 0)
 {
 if (execve(cmd[0], cmd, envp) == -1)
-perror("Code nonexistent");
 free(cmd);
 exit(0);
 }

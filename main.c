@@ -25,7 +25,7 @@ break;
 }
 else if (strcmp(line, "env\n") == 0)
 penv(envp);
-else if (strcmp(line, "\n") != 0)
+else if (strcmp(line, "\n") != 0 || strcmp(line, " ") != 0)
 {
 cmd = get_cmd(cmd, line);
 frk(cmd, envp);
