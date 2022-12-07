@@ -12,9 +12,10 @@ char **get_cmd(char **cmd, char *line)
 	char *tok = NULL;
 	char *delim = "\n\t ";
 	int i = 0;
+	int b;
 
 	/* We need to clean cmd on each call */
-	for (int b = 0; cmd[b]; b++)
+	for (b = 0; cmd[b]; b++)
 		cmd[b] = NULL;
 	tok = strtok(line, delim);
 
