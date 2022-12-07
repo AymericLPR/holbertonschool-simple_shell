@@ -2,6 +2,9 @@
 /**
  * Builtin - struct for builtin functions
  * @s: char of format
+ * @args: a null -terminated double pointer containing command/arguments
+ * @front: a double pointer to the beginning of args
+ *
  * Return: a function
  *
  */
@@ -9,13 +12,13 @@ int builtin(char *s)
 {
 int i = 0;
 
-cmnd_t comms[] = {
-{"env", printenv}, 
+cmd_t comms[] = {
+{"env", printenv},           /*{arg, funct},*/
 {"exit", exitshell},
 {NULL, NULL}
 };
 
-while (comms[i].arg != NULL)
+while (comms[i].arg != NULL) /*Loops through struct until NULL*/
 {
 
 if (_strcmp(comms[i].arg, s) == 0

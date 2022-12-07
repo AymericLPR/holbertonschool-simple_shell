@@ -27,6 +27,7 @@ int *_strdup(char *str);
 void penv(char **envp);
 char **get_cmd(char **cmd, char *line);
 void frk(char **cmd, char **envp);
+int builtin(char *s);
 
 
 #endif
