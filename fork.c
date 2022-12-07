@@ -6,7 +6,7 @@
  * @envp: environement variable
  */
 
-void frk(char **cmd, char **envp)
+int frk(char **cmd, char **envp)
 {
 int status = 0;
 pid_t pid; 
