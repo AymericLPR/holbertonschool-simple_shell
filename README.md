@@ -1,4 +1,7 @@
-Simple shell is a simple UNIX command interpreter written as part of the low-level programming.
+
+Simple shell:
+
+is a simple UNIX command interpreter written as part of the low-level programming.
 It reads commands from either a file or standard input and executes them.
 It compile all .c files in the repository and run the resulting executable:
 
@@ -47,3 +50,13 @@ $echo "echo 'hello' ; echo 'world'" | ./shell
 'hello'
 'world'
 && - AND logical separator
+
+
+Description of the project:
+
+Tasks description:
+
+Files description (what they do):
+
+Authors:
+
