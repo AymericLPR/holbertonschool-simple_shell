@@ -3,6 +3,7 @@
 /**
  * get_cmd - get the command
  * @line: the command's user
+ * @cmd: command
  * Return: Always 0.
  */
 
