@@ -10,18 +10,22 @@
 char **get_cmd(char **cmd, char *line)
 {
 	char *tok = NULL;
-	char delim[] = " \n\t";
+	char *delim = "\n\t ";
 	int i = 0;
 
+	/* We need to clean cmd on each call */
+	for (int b = 0; cmd[b]; b++)
+		cmd[b] = NULL;
 	tok = strtok(line, delim);
 
 	while (tok)
 	{
-		cmd[i] = tok;
+		cmd[i] = strtok(tok, " \n");
 		tok = strtok(NULL, line);
 		i++;
 	}
 	if (cmd == NULL)
 		printf("Error");
+	free(tok);
 	return (cmd);
 }
