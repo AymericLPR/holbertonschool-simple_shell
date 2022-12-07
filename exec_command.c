@@ -9,6 +9,6 @@
 
 void execute_cmd(char **cmd, char **envp)
 {
-  if (execve(cmd[0], cmd, envp) == -1)
-		perror("Code nonexistent");
+if ((execve(cmd[0], cmd, envp)) == -1)
+perror("Code nonexistent");
 }
