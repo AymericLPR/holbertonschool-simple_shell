@@ -8,7 +8,8 @@
 
 void frk(char **cmd, char **envp)
 {
-pid_t pid;
+int status = 0;
+pid_t pid; 
 
 pid = fork();
 
@@ -19,5 +20,9 @@ free(cmd);
 exit(0);
 }
 else
-wait(NULL);
+wait(&status);
+if (WIFEXITED(status))
+return (WEXITSTATUS(status));
+else
+return (status);
 }
