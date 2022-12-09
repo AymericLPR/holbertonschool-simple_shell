@@ -1,11 +1,12 @@
-TheSimple shell:
+**The Simple shell:**
+
 
 
 It is a simple UNIX command interpreter written as part of the low-level programming.
 It reads commands from either a file or standard input and executes them.
 
 
-Installation:
+**Installation:**
 
 
 This program is written in C and compiled on UBUNTU with GCC.
@@ -13,8 +14,8 @@ This program is written in C and compiled on UBUNTU with GCC.
 It is compiled with: 
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o shell
 
-
-Instructions:
+***
+Instructions:**
 
 
 Execute commands within Shell:
@@ -32,7 +33,7 @@ Exemple:
 $ echo "ls" | ./shell
 
 
-Usage:
+**Usage:**
 
 
 Most used functions in Shell:
@@ -43,35 +44,38 @@ Most used functions in Shell:
 -pwd
 
 
-C functions utilized:
+**Some C functions utilized:**
 
 
-exit
-fork
-free
-malloc
-perror
-wait
-getline
-stat
-execve
+	.exit
+
+	.fork
+
+	.free
+
+	.malloc
+
+	.perror
+
+	.wait
+
+	.getline
 
 
-File descriptions
+**File descriptions:**
 
 
-README.md - Description of the simple shell program. 
+	.README.md - Description of the simple shell program. 
 
-main.h - Header file containing function prototypes, struct definitions, macros and standard libraries.
+	.main.h - Header file containing function prototypes, struct definitions, macros and standard libraries.
 
-main.c - Opens up the simple shell.
+	.main.c - Opens up the simple shell.
 
-strfunctions.c - Container for various string functions, such as: _strlen, _strdup, str_concat, etc.
-
-
+	.strfunctions.c - Container for various string functions, such as: _strlen, _strdup, str_concat, etc.
 
 
-Authors:
+
+**Authors:**
 
 
 Myriam BELKHIRI
