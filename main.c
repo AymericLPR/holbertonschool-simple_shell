@@ -13,8 +13,6 @@ int main(__attribute__((unused))int argc, char **argv, char **envp)
 	char *line = NULL;
 	size_t len = 0;
 	char **cmd;
-	char *ev[0];
-	(void)ev;
 	(void)argv;
 
 	cmd = calloc(sizeof(char), 1024);
@@ -30,11 +28,9 @@ int main(__attribute__((unused))int argc, char **argv, char **envp)
 		else if (strcmp(line, "\n") != 0)
 		  {
 		    cmd = get_cmd(cmd, line);
-		    ppath(cmd, ev);
 		    frk(cmd, envp);
 		  }
 	}
-	free(ev[0]);
 	free(cmd);
 	free(line);
 	return (0);
