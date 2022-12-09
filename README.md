@@ -34,6 +34,7 @@ Exemple:
 $ echo "ls" | ./shell
 
 
+
 --------------------------------**#Usage:**----------------------------------------
 
 
@@ -41,16 +42,28 @@ $ echo "ls" | ./shell
 
 -env
 -exit
+-echo
+-cat
 -ls
 -pwd
 
 
-----------------------------------**Some C functions utilized:**-----------------------------------------
+----------------------------------** C functions utilized and systems calls:**-----------------------------------------
 
 
 	.exit
 
-	.fork
+	.frk
+
+	.strtok
+
+	.get_cmd
+
+	.envp
+
+	.pid_t
+
+	.envp
 
 	.free
 
@@ -61,7 +74,8 @@ $ echo "ls" | ./shell
 	.wait
 
 	.getline
-
+	
+	.execve
 
 -------------------------------**#File descriptions:**-----------------------------------------
 
@@ -75,9 +89,22 @@ $ echo "ls" | ./shell
 	.strfunctions.c - Container for various string functions, such as: _strlen, _strdup, str_concat, etc.
 
 
+--------------------------------**Tasks:**----------------------
+
+
+	.	_Task_ 0
+	.	_Task_ 1
+	.	_Task_ 2 
+	.	_Task_ 3
+	.	_Task_ 4
+	.	_Task_ 5
+	.	_Task_ 6
+
+
 
 -------------------------------------**#Authors:**-------------------------------------------------
 
 
-Myriam BELKHIRI
-Aymeric
+
+Myriam BELKHIRI <5019@holbertonstudents.com>
+Aymeric LE PEN-RAVOUX <5622@holbertonstudents.com>
