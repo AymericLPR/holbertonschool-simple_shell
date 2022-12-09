@@ -38,18 +38,24 @@ $ echo "ls" | ./shell
 ----------------------------------**#Usage:**----------------------------------------
 
 
+
 #Most used functions in Shell:
 
--env
--exit
--echo
--cat
--ls
--pwd
+-man + cmd: Shows the manual entry for any given command.
+-mkdir: Creates a directory and accepts directory name as next parameter.
+-touch: Creates a file or update a file.
+-cat: Concatenates the file and gives output on standard output. 
+-ls: Display list of all files and folders in the current directory.
+-cd: Changes the directory.
+-pwd: Shows the present working directory.
+-exit: Quits the simple_shell program.
+
 
 
 ------------------------------------** C functions utilized and systems calls:**-----------------------------------------
 
+
+Lists of allowed functions and system calls (see the man):
 
 	.exit
 
@@ -76,6 +82,8 @@ $ echo "ls" | ./shell
 	.getline
 	
 	.execve
+
+
 
 --------------------------------------------**#File descriptions:**-----------------------------------------
 
