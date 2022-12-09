@@ -18,12 +18,12 @@ char **get_cmd(char **cmd, char *line)
 	for (b = 0; cmd[b]; b++)
 	  cmd[b] = NULL;
 	tok = strtok(line, delim);
-	while (tok)
-	  {
-	    cmd[i] = strtok(tok, " \n");
-	    tok = strtok(NULL, line);
+	  do{
+	    tok = strtok(line, delim);
+	    cmd[i] = tok;
+	    line = NULL;
 	    i++;
-	  }
+	  }while(tok);
 	if (cmd == NULL)
 	  printf("Error");
 	free(tok);

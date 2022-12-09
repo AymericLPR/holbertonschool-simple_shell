@@ -17,7 +17,6 @@ extern char **environ;
 void penv(char **envp);
 char **get_cmd(char **cmd, char *line);
 int frk(char **cmd, char **envp);
-int ppath();
-char get_path();
+int ppath(char *av[], char *ev[]);
 
 #endif

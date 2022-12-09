@@ -8,21 +8,21 @@
 
 int frk(char **cmd, char **envp)
 {
-int status = 0;
-pid_t pid; 
-
-pid = fork();
-
-if (pid == 0)
-{
-if (execve(cmd[0], cmd, envp) == -1)
-free(cmd);
-exit(0);
-}
-else
-wait(&status);
-if (WIFEXITED(status))
-return (WEXITSTATUS(status));
-else
-return (status);
+  int status = 0;
+  pid_t pid; 
+  
+  pid = fork();
+  
+  if (pid == 0)
+    {
+      if (execve(cmd[0], cmd, envp) == -1)
+	free(cmd);
+      exit(0);
+    }
+  else
+    wait(&status);
+  if (WIFEXITED(status))
+    return (WEXITSTATUS(status));
+  else
+    return (status);
 }
