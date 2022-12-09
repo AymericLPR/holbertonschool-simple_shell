@@ -1,4 +1,5 @@
-**The Simple shell:**				file:///home/myriam/T%C3%A9l%C3%A9chargements/penguin-gd7a909750_640.png"
+------------**#The Simple shell:**---------------			
+"file:///home/myriam/T%C3%A9l%C3%A9chargements/penguin-gd7a909750_640.png"
 
 
 
@@ -6,37 +7,37 @@ It is a simple UNIX command interpreter written as part of the low-level program
 It reads commands from either a file or standard input and executes them.
 
 
-**Installation:**
+-------------------------**#Installation:**-------------------------------
 
 
 This program is written in C and compiled on UBUNTU with GCC.
 
 It is compiled with: 
-$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell <span class= "bg-warning">
 
 ***
-Instructions:**
+--------------------------------**#Instructions:**------------------------------------
 
 
-Execute commands within Shell:
+##Execute commands within Shell:
 $ ./shell
 
 A prompt will follow upon executing ./shell command.
-The shell is ready for user input:
+##The shell is ready for user input:
 $
 
 
-Send commands into Shell:
+##Send commands into Shell:
 
-Pipe a command into the Shell:
+##Pipe a command into the Shell:
 Exemple:
 $ echo "ls" | ./shell
 
 
-**Usage:**
+--------------------------------**#Usage:**----------------------------------------
 
 
-Most used functions in Shell:
+#Most used functions in Shell:
 
 -env
 -exit
@@ -44,7 +45,7 @@ Most used functions in Shell:
 -pwd
 
 
-**Some C functions utilized:**
+----------------------------------**Some C functions utilized:**-----------------------------------------
 
 
 	.exit
@@ -62,7 +63,7 @@ Most used functions in Shell:
 	.getline
 
 
-**File descriptions:**
+-------------------------------**#File descriptions:**-----------------------------------------
 
 
 	.README.md - Description of the simple shell program. 
@@ -75,7 +76,7 @@ Most used functions in Shell:
 
 
 
-**Authors:**
+-------------------------------------**#Authors:**-------------------------------------------------
 
 
 Myriam BELKHIRI
