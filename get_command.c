@@ -28,5 +28,6 @@ line = cmd[0];
 command = getpath(&line);
 cmd[0] = command == NULL ? strdup(cmd[0]) : command;
 free(tok);
+free(command);
 return (cmd);
 }

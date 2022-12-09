@@ -33,7 +33,9 @@ return (path);
 }
 token = strtok(NULL, ":");
 }
+free(token);
 free(path);
 free(env);
+free(bufCommand);
 return (NULL);
 }

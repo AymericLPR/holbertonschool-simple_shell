@@ -15,29 +15,29 @@ size_t len = 0;
 char **cmd;
 (void)argv;
 
-cmd = calloc(sizeof(char), 1024);
-while (1)
-{
-len = 0;
-getline(&line, &len, stdin);
-if (feof(stdin) || strcmp(line, "exit\n") == 0)
-{
-break;
-}
-else if (onlyspace(line))
-{
-free(line);
-continue;
-}
-else if (strcmp(line, "env\n") == 0)
-penv(envp);
-else if (strcmp(line, "\n") != 0)
-{
-cmd = get_cmd(cmd, line);
-frk(cmd, envp);
-}
-}
-free(cmd);
-free(line);
-return (0);
+ cmd = calloc(sizeof(char), 1024);
+ while (1)
+   {
+     len = 0;
+     getline(&line, &len, stdin);
+     if (feof(stdin) || strcmp(line, "exit\n") == 0)
+       {
+	 break;
+       }
+     else if (onlyspace(line))
+       {
+	 free(line);
+	 continue;
+       }
+     else if (strcmp(line, "env\n") == 0)
+       penv(envp);
+     else if (strcmp(line, "\n") != 0)
+       {
+	 get_cmd(cmd, line);
+	 frk(cmd, envp);
+       }
+   }
+ free(line);
+ free(cmd);
+ return (0);
 }
