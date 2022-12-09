@@ -117,13 +117,13 @@ Lists of allowed functions and system calls (see the man):
 
 
 
-	.	_Task_ 0
-	.	_Task_ 1
-	.	_Task_ 2 
-	.	_Task_ 3
-	.	_Task_ 4
-	.	_Task_ 5
-	.	_Task_ 6
+	.	_Task_ 0: Write the README, the man for the Shell and AUTHORS.
+	.	_Task_ 1: Write a beautiful code that passes the Betty checks.
+	.	_Task_ 2: Write a UNIX command line interpreter.
+	.	_Task_ 3: Handle command lines with arguments.
+	.	_Task_ 4: Handle the PATH.
+	.	_Task_ 5: Implement the exit built-in, that exits the shell.
+	.	_Task_ 6: Implement the env built-in, that prints the current environment.
 
 
 
