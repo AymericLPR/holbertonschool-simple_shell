@@ -25,8 +25,9 @@ It is compiled with:
 	Execute commands within Shell:
 `$ ./shell`
 
-A prompt will follow upon executing ./shell command.
-	The shell is ready for user input:
+A prompt will follow upon executing `./shell` command.
+
+The shell is ready for user input:
 `$`
 
 
