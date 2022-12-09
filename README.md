@@ -1,4 +1,4 @@
-------------**#The Simple shell:**---------------			
+--------------------------------**#The Simple shell:**---------------			
 "file:///home/myriam/T%C3%A9l%C3%A9chargements/penguin-gd7a909750_640.png"
 
 
@@ -7,7 +7,7 @@ It is a simple UNIX command interpreter written as part of the low-level program
 It reads commands from either a file or standard input and executes them.
 
 
--------------------------**#Installation:**-------------------------------
+---------------------------------**#Installation:**-------------------------------
 
 
 This program is written in C and compiled on UBUNTU with GCC.
@@ -16,7 +16,7 @@ It is compiled with:
 $ gcc -Wall -Werror -Wextra -pedantic *.c -o shell <span class= "bg-warning">
 
 ***
---------------------------------**#Instructions:**------------------------------------
+---------------------------------**#Instructions:**------------------------------------
 
 
 ##Execute commands within Shell:
@@ -35,7 +35,7 @@ $ echo "ls" | ./shell
 
 
 
---------------------------------**#Usage:**----------------------------------------
+----------------------------------**#Usage:**----------------------------------------
 
 
 #Most used functions in Shell:
@@ -48,7 +48,7 @@ $ echo "ls" | ./shell
 -pwd
 
 
-----------------------------------** C functions utilized and systems calls:**-----------------------------------------
+------------------------------------** C functions utilized and systems calls:**-----------------------------------------
 
 
 	.exit
@@ -77,7 +77,7 @@ $ echo "ls" | ./shell
 	
 	.execve
 
--------------------------------**#File descriptions:**-----------------------------------------
+--------------------------------------------**#File descriptions:**-----------------------------------------
 
 
 	.README.md - Description of the simple shell program. 
@@ -88,8 +88,13 @@ $ echo "ls" | ./shell
 
 	.strfunctions.c - Container for various string functions, such as: _strlen, _strdup, str_concat, etc.
 
+	.fork.c - Function fork.
+
+	.get_command.c - Function for take the command.
+
 
 --------------------------------**Tasks:**----------------------
+
 
 
 	.	_Task_ 0
