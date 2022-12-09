@@ -1,5 +1,8 @@
---------------------------------**#The Simple shell:**---------------			
-![Drag Racing](https://i.goopics.net/ta2xso.png)
+--------------------------------------------------**#The Simple shell:**---------------			
+                                                                                          
+
+
+																						  ![Drag Racing](https://i.goopics.net/ta2xso.png)
 
 
 
@@ -7,7 +10,7 @@ It is a simple UNIX command interpreter written as part of the low-level program
 It reads commands from either a file or standard input and executes them.
 
 
----------------------------------**#Installation:**-------------------------------
+------------------------------------------------**#Installation:**-------------------------------
 
 
 This program is written in C and compiled on UBUNTU with GCC.
@@ -15,8 +18,8 @@ This program is written in C and compiled on UBUNTU with GCC.
 It is compiled with: 
 `$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell`
 
-***
----------------------------------**#Instructions:**------------------------------------
+
+------------------------------------------------ **#Instructions:**-----------------------------------
 
 
 ##Execute commands within Shell:
@@ -35,7 +38,7 @@ $ echo "ls" | ./shell
 
 
 
-----------------------------------**#Usage:**----------------------------------------
+--------------------------------------------------**#Usage:**----------------------------------------
 
 
 
@@ -60,7 +63,7 @@ $ echo "ls" | ./shell
 
 
 
-------------------------------------** C functions utilized and systems calls:**-----------------------------------------
+-----------------------------------------------** C functions utilized and systems calls:**-----------------------------------------
 
 
 Lists of allowed functions and system calls (see the man):
@@ -93,7 +96,7 @@ Lists of allowed functions and system calls (see the man):
 
 
 
---------------------------------------------**#File descriptions:**-----------------------------------------
+---------------------------------------------------------**#File descriptions:**-----------------------------------------
 
 
 	.README.md - Description of the simple shell program. 
@@ -109,7 +112,7 @@ Lists of allowed functions and system calls (see the man):
 	.get_command.c - Function for take the command.
 
 
---------------------------------**Tasks:**----------------------
+---------------------------------------------------------**Tasks:**----------------------
 
 
 
@@ -123,7 +126,7 @@ Lists of allowed functions and system calls (see the man):
 
 
 
--------------------------------------**#Authors:**-------------------------------------------------
+----------------------------------------------------------**#Authors:**-------------------------------------------------
 
 
 
