@@ -41,14 +41,22 @@ $ echo "ls" | ./shell
 
 #Most used functions in Shell:
 
--man + cmd: Shows the manual entry for any given command.
--mkdir: Creates a directory and accepts directory name as next parameter.
--touch: Creates a file or update a file.
--cat: Concatenates the file and gives output on standard output. 
--ls: Display list of all files and folders in the current directory.
--cd: Changes the directory.
--pwd: Shows the present working directory.
--exit: Quits the simple_shell program.
+	
+	-man + cmd: Shows the manual entry for any given command.
+
+	-mkdir: Creates a directory and accepts directory name as next parameter.
+	
+	-touch: Creates a file or update a file.
+	
+	-cat: Concatenates the file and gives output on standard output. 
+	
+	-ls: Display list of all files and folders in the current directory.
+	
+	-cd: Changes the directory.
+
+	-pwd: Shows the present working directory.
+	
+	-exit: Quits the simple_shell program.
 
 
 
