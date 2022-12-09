@@ -1,5 +1,5 @@
 --------------------------------**#The Simple shell:**---------------			
-"file:///home/myriam/T%C3%A9l%C3%A9chargements/penguin-gd7a909750_640.png"
+![Drag Racing](https://i.goopics.net/ta2xso.png)
 
 
 
@@ -13,7 +13,7 @@ It reads commands from either a file or standard input and executes them.
 This program is written in C and compiled on UBUNTU with GCC.
 
 It is compiled with: 
-$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell <span class= "bg-warning">
+`$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell`
 
 ***
 ---------------------------------**#Instructions:**------------------------------------
