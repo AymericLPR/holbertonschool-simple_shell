@@ -64,7 +64,7 @@ Exemple:
 
 
 
------------------------------------------------** C functions utilized and systems calls:**-----------------------------------------
+-----------------------------------------------**#C functions utilized and systems calls:**-----------------------------------------
 
 
 Lists of allowed functions and system calls (see the man):
@@ -113,7 +113,7 @@ Lists of allowed functions and system calls (see the man):
 	.get_command.c - Function for take the command.
 
 
----------------------------------------------------------**Tasks:**----------------------
+---------------------------------------------------------**#Tasks:**----------------------
 
 
 
