@@ -1,5 +1,4 @@
-**The Simple shell:**         "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FCyG16N3GJWo%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fkorben.info%2Finstaller-shell-bash-linux-windows-10.html&tbnid=VTbLxGI90sYvCM&vet=10CEIQMyiFAWoXChMIgI28hp3s-wIVAAAAAB0AAAAAEAI..i&docid=Y3UKCgXZ8BSdsM&w=1280&h=720&q=image%20du%20shell%20linux%20dans%20C&ved=0CEIQMyiFAWoXChMIgI28hp3s-wIVAAAAAB0AAAAAEAI"
-
+**The Simple shell:**				file:///home/myriam/T%C3%A9l%C3%A9chargements/penguin-gd7a909750_640.png"
 
 
 
