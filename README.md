@@ -2,7 +2,7 @@
                                                                                           
 
 
-																						  ![Drag Racing](https://i.goopics.net/ta2xso.png)
+			  ![Drag Racing](https://i.goopics.net/ta2xso.png)
 
 
 
@@ -45,21 +45,21 @@ $ echo "ls" | ./shell
 #Most used functions in Shell:
 
 	
-	-man + cmd: Shows the manual entry for any given command.
+	-`man + cmd`: Shows the manual entry for any given command.
 
-	-mkdir: Creates a directory and accepts directory name as next parameter.
+	-`mkdir`: Creates a directory and accepts directory name as next parameter.
 	
-	-touch: Creates a file or update a file.
+	-`touch`: Creates a file or update a file.
 	
-	-cat: Concatenates the file and gives output on standard output. 
+	-`cat`: Concatenates the file and gives output on standard output. 
 	
-	-ls: Display list of all files and folders in the current directory.
+	-`ls`: Display list of all files and folders in the current directory.
 	
-	-cd: Changes the directory.
+	-`cd`: Changes the directory.
 
-	-pwd: Shows the present working directory.
+	-`pwd`: Shows the present working directory.
 	
-	-exit: Quits the simple_shell program.
+	-`exit`: Quits the simple_shell program.
 
 
 
@@ -70,7 +70,7 @@ Lists of allowed functions and system calls (see the man):
 
 	.exit
 
-	.frk
+	.fork
 
 	.strtok
 
@@ -130,9 +130,9 @@ Lists of allowed functions and system calls (see the man):
 
 
 
-	Myriam BELKHIRI <5019@holbertonstudents.com>
+	`Myriam BELKHIRI <5019@holbertonstudents.com>`
 
-	Aymeric LE PEN-RAVOUX <5622@holbertonstudents.com>
+	`Aymeric LE PEN-RAVOUX <5622@holbertonstudents.com>`
 
 
 
