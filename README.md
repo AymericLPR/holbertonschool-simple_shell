@@ -1,4 +1,4 @@
---------------------------------------------------**#The Simple shell:**---------------			
+--------------------------------------------------**#The Simple Shell:**--------------------------------------------------------			
                                                                                           
 
 
@@ -6,14 +6,14 @@
 
 
 
-It is a simple UNIX command interpreter written as part of the low-level programming.
+It is a simple `UNIX` command interpreter written as part of the low-level programming.
 It reads commands from either a file or standard input and executes them.
 
 
 ------------------------------------------------**#Installation:**-------------------------------
 
 
-This program is written in C and compiled on UBUNTU with GCC.
+This program is written in `C` and compiled on `UBUNTU` with `GCC`.
 
 It is compiled with: 
 `$ gcc -Wall -Werror -Wextra -pedantic *.c -o shell`
@@ -22,19 +22,19 @@ It is compiled with:
 ------------------------------------------------ **#Instructions:**-----------------------------------
 
 
-##Execute commands within Shell:
-$ ./shell
+	Execute commands within Shell:
+`$ ./shell`
 
 A prompt will follow upon executing ./shell command.
-##The shell is ready for user input:
-$
+	The shell is ready for user input:
+`$`
 
 
-##Send commands into Shell:
+	Send commands into Shell:
 
-##Pipe a command into the Shell:
+	Pipe a command into the Shell:
 Exemple:
-$ echo "ls" | ./shell
+`$ echo "ls" | ./shell`
 
 
 
@@ -45,21 +45,21 @@ $ echo "ls" | ./shell
 #Most used functions in Shell:
 
 	
-	-`man + cmd`: Shows the manual entry for any given command.
+	-man + cmd: Shows the manual entry for any given command.
 
-	-`mkdir`: Creates a directory and accepts directory name as next parameter.
+	-mkdir: Creates a directory and accepts directory name as next parameter.
 	
-	-`touch`: Creates a file or update a file.
+	-touch: Creates a file or update a file.
 	
-	-`cat`: Concatenates the file and gives output on standard output. 
+	-cat: Concatenates the file and gives output on standard output. 
 	
-	-`ls`: Display list of all files and folders in the current directory.
+	-ls: Display list of all files and folders in the current directory.
 	
-	-`cd`: Changes the directory.
+	-cd: Changes the directory.
 
-	-`pwd`: Shows the present working directory.
+	-pwd: Shows the present working directory.
 	
-	-`exit`: Quits the simple_shell program.
+	-exit: Quits the simple_shell program.
 
 
 
@@ -130,9 +130,9 @@ Lists of allowed functions and system calls (see the man):
 
 
 
-	`Myriam BELKHIRI <5019@holbertonstudents.com>`
+	Myriam BELKHIRI <5019@holbertonstudents.com>
 
-	`Aymeric LE PEN-RAVOUX <5622@holbertonstudents.com>`
+	Aymeric LE PEN-RAVOUX <5622@holbertonstudents.com>
 
 
 
