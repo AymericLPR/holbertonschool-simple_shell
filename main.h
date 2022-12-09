@@ -17,5 +17,7 @@ extern char **environ;
 void penv(char **envp);
 char **get_cmd(char **cmd, char *line);
 int frk(char **cmd, char **envp);
+char *getpath(char **bufCommand);
+int onlyspace(char *input);
 
 #endif

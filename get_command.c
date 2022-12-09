@@ -11,20 +11,22 @@ char **get_cmd(char **cmd, char *line)
 {
 char *tok = NULL;
 char *delim = " \n\t\r";
+char *command = NULL;
 int i = 0;
 int b;
 /* We need to clean cmd on each call */
 for (b = 0; cmd[b]; b++)
 cmd[b] = NULL;
 tok = strtok(line, delim);
-do {
-tok = strtok(line, delim);
+while (tok)
+{
 cmd[i] = tok;
-line = NULL;
+tok = strtok(NULL, delim);
 i++;
-} while (tok);
-if (cmd == NULL)
-printf("Error");
+}
+line = cmd[0];
+command = getpath(&line);
+cmd[0] = command == NULL ? strdup(cmd[0]) : command;
 free(tok);
 return (cmd);
 }

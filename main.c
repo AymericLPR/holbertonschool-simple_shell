@@ -18,10 +18,16 @@ char **cmd;
 cmd = calloc(sizeof(char), 1024);
 while (1)
 {
+len = 0;
 getline(&line, &len, stdin);
 if (feof(stdin) || strcmp(line, "exit\n") == 0)
 {
 break;
+}
+else if (onlyspace(line))
+{
+free(line);
+continue;
 }
 else if (strcmp(line, "env\n") == 0)
 penv(envp);
