@@ -18,6 +18,10 @@ char **get_cmd(char **cmd, char *line)
     for (b = 0; cmd[b]; b++)
         cmd[b] = NULL;
     tok = strtok(line, delim);
+    if (tok == NULL)
+    {  
+        return (NULL);
+    }
     while (tok)
     {
         cmd[i] = tok;

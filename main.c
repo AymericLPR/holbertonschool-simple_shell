@@ -26,13 +26,15 @@ int main(__attribute__((unused)) int argc, char **argv, char **envp)
       penv(envp);
     else if (strcmp(line, "\n") != 0)
     {
-      get_cmd(cmd, line);
-      frk(cmd, envp);
-      free(cmd[0]);
-      free(line);
+      if (get_cmd(cmd, line))
+      {
+        frk(cmd, envp);
+        free(cmd[0]);
+      }
       cmd[0] = NULL;
-      line = NULL;
     }
+    free(line);
+    line = NULL;
   }
   free(line);
   free(cmd);
