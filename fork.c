@@ -10,7 +10,7 @@
 int frk(char **cmd, char **envp)
 {
 int status = 0;
-pid_t pid; 
+pid_t pid;
 
 pid = fork();
 

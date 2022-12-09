@@ -17,12 +17,12 @@ int b;
 for (b = 0; cmd[b]; b++)
 cmd[b] = NULL;
 tok = strtok(line, delim);
-do{
+do {
 tok = strtok(line, delim);
 cmd[i] = tok;
 line = NULL;
 i++;
-}while(tok);
+} while (tok);
 if (cmd == NULL)
 printf("Error");
 free(tok);
